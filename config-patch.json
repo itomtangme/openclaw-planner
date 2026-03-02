@@ -1,0 +1,12 @@
+{
+  "agents": {
+    "add": {
+      "id": "planner",
+      "name": "Planner",
+      "model": "REPLACE_WITH_TIER2_MODEL",
+      "fallbacks": ["REPLACE_WITH_TIER3_MODEL"],
+      "workspace": "/root/.openclaw/workspace-planner",
+      "systemPromptPath": "/root/.openclaw/workspace-planner/SOUL.md"
+    }
+  }
+}
