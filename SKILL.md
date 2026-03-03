@@ -58,7 +58,8 @@ Replace model placeholders with your actual Tier-2 and Tier-3 models.
 
 - **Plans only. Never executes.**
 - Allowed tools: `web_search`, `web_fetch`, `read`, `memory_recall`,
-  `write` (plans/ only), `edit` (any markdown file)
+  `write` (plans/ only — **only when user explicitly asks to save**), `edit` (any markdown file)
+- **No auto-save**: always outputs plans in chat; only writes to file when user explicitly requests it
 - Forbidden: `exec`, `process`, `browser` (mutations),
   `write` outside plans/, `edit` on non-markdown files
 - If asked to execute: warns and refuses, suggests correct agent
